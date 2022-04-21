@@ -9,8 +9,8 @@ from pydantic import BaseModel, conlist
 app = FastAPI(title="Predicting Wine Class with batching")
 
 # Open classifier in global scope
-print("Load model\n")
-with open("models/wine.pkl", "rb") as file:
+# Load model
+with open("models/wine-95.pkl", "rb") as file:
     clf = pickle.load(file)
 
 
